@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Domain", "Business Domain", "{75B1077D-4706-4332-8469-550C94C171C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crosscutting", "Crosscutting", "{BC8BE40E-3106-4502-AB92-4B2D7F770B0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access", "Data Access", "{17263F32-B83D-4824-BEFF-D3D6906CCD2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A4DAF77F-3D4B-4E59-98D0-48516C5D6159}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Interface", "Service Interface", "{CC03D428-603F-4C78-8424-C5A2D8FC1E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain", "BCR.Business.Domain\BCR.Business.Domain.csproj", "{25A90B4D-1B9B-4B95-802D-491F38D55A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain.Commands", "BCR.Business.Domain.Commands\BCR.Business.Domain.Commands.csproj", "{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain.Queries", "BCR.Business.Domain.Queries\BCR.Business.Domain.Queries.csproj", "{59FB266E-2C9F-4336-8186-56C1389BD007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Crosscutting", "BCR.Crosscutting\BCR.Crosscutting.csproj", "{438AB154-160C-4E1F-A060-12F637E99A9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.DataAccess", "BCR.DataAccess\BCR.DataAccess.csproj", "{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Service", "BCR.Service\BCR.Service.csproj", "{0750EDAD-68AE-48E1-8002-127551BBD447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Web.Api", "BCR.Web.Api\BCR.Web.Api.csproj", "{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25A90B4D-1B9B-4B95-802D-491F38D55A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A90B4D-1B9B-4B95-802D-491F38D55A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A90B4D-1B9B-4B95-802D-491F38D55A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A90B4D-1B9B-4B95-802D-491F38D55A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FB266E-2C9F-4336-8186-56C1389BD007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FB266E-2C9F-4336-8186-56C1389BD007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FB266E-2C9F-4336-8186-56C1389BD007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FB266E-2C9F-4336-8186-56C1389BD007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438AB154-160C-4E1F-A060-12F637E99A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438AB154-160C-4E1F-A060-12F637E99A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438AB154-160C-4E1F-A060-12F637E99A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438AB154-160C-4E1F-A060-12F637E99A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0750EDAD-68AE-48E1-8002-127551BBD447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0750EDAD-68AE-48E1-8002-127551BBD447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0750EDAD-68AE-48E1-8002-127551BBD447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0750EDAD-68AE-48E1-8002-127551BBD447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25A90B4D-1B9B-4B95-802D-491F38D55A8D} = {75B1077D-4706-4332-8469-550C94C171C6}
+		{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A} = {75B1077D-4706-4332-8469-550C94C171C6}
+		{59FB266E-2C9F-4336-8186-56C1389BD007} = {75B1077D-4706-4332-8469-550C94C171C6}
+		{438AB154-160C-4E1F-A060-12F637E99A9F} = {BC8BE40E-3106-4502-AB92-4B2D7F770B0C}
+		{DDF45CA8-F3E6-453D-8B5C-E7B24094745B} = {17263F32-B83D-4824-BEFF-D3D6906CCD2C}
+		{0750EDAD-68AE-48E1-8002-127551BBD447} = {A4DAF77F-3D4B-4E59-98D0-48516C5D6159}
+		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5} = {CC03D428-603F-4C78-8424-C5A2D8FC1E01}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DC8FB5A-6B45-4F82-8DCE-F2285679558B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://arrosvmtfs08:8080/tfs/defaultcollection
+		SccProjectUniqueName0 = BCR.Business.Domain\\BCR.Business.Domain.csproj
+		SccProjectTopLevelParentUniqueName0 = Bcr.sln
+		SccProjectName0 = BCR.Business.Domain
+		SccLocalPath0 = BCR.Business.Domain
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = BCR.Business.Domain.Commands\\BCR.Business.Domain.Commands.csproj
+		SccProjectTopLevelParentUniqueName2 = Bcr.sln
+		SccProjectName2 = BCR.Business.Domain.Commands
+		SccLocalPath2 = BCR.Business.Domain.Commands
+		SccProjectUniqueName3 = BCR.Business.Domain.Queries\\BCR.Business.Domain.Queries.csproj
+		SccProjectTopLevelParentUniqueName3 = Bcr.sln
+		SccProjectName3 = BCR.Business.Domain.Queries
+		SccLocalPath3 = BCR.Business.Domain.Queries
+		SccProjectUniqueName4 = BCR.Crosscutting\\BCR.Crosscutting.csproj
+		SccProjectTopLevelParentUniqueName4 = Bcr.sln
+		SccProjectName4 = BCR.Crosscutting
+		SccLocalPath4 = BCR.Crosscutting
+		SccProjectUniqueName5 = BCR.DataAccess\\BCR.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName5 = Bcr.sln
+		SccProjectName5 = BCR.DataAccess
+		SccLocalPath5 = BCR.DataAccess
+		SccProjectUniqueName6 = BCR.Service\\BCR.Service.csproj
+		SccProjectTopLevelParentUniqueName6 = Bcr.sln
+		SccProjectName6 = BCR.Service
+		SccLocalPath6 = BCR.Service
+		SccProjectUniqueName7 = BCR.Web.Api\\BCR.Web.Api.csproj
+		SccProjectTopLevelParentUniqueName7 = Bcr.sln
+		SccProjectName7 = BCR.Web.Api
+		SccLocalPath7 = BCR.Web.Api
+	EndGlobalSection
+EndGlobal
