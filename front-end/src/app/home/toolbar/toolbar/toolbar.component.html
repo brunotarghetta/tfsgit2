@@ -1,0 +1,16 @@
+ <mat-toolbar color="primary" class="app-header">
+    <div><a href="https://www.neoris.com" target="_blank" class="positronx">Neoris</a></div>
+
+    <button mat-button [matMenuTriggerFor]="monitor">Monitor</button>
+
+    <span class = "filler"></span>
+    <span class="nav-tool-items">
+      <a mat-button routerLink="/login" routerLinkActive="active">Cerrar</a>      
+    </span>
+  </mat-toolbar>
+
+  <mat-menu #monitor="matMenu">
+    <a mat-button routerLink="/LaboratorioProcesos" routerLinkActive="active">Laboratorio</a>  
+  </mat-menu>
+ 
+ 
