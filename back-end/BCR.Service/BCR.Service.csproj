@@ -12,10 +12,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BCR.Business.Domain.Commands\BCR.Business.Domain.Commands.csproj" />
     <ProjectReference Include="..\BCR.Business.Domain.Queries\BCR.Business.Domain.Queries.csproj" />
     <ProjectReference Include="..\BCR.Business.Domain\BCR.Business.Domain.csproj" />
     <ProjectReference Include="..\BCR.Crosscutting\BCR.Crosscutting.csproj" />

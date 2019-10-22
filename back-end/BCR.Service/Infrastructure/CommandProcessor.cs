@@ -1,31 +1,21 @@
-﻿using BCR.Crosscutting.Exceptions;
-using StructureMap;
-using System;
-using System.Diagnostics;
+﻿using Autofac;
 
 namespace BCR.Service.Infrastructure
 {
     public sealed class CommandProcessor : ICommandProcessor
     {
-        private readonly IContainer container;
+              private readonly IComponentContext context;
 
-        public CommandProcessor(IContainer container)
+        public CommandProcessor(IComponentContext context)
         {
-            Argument.ThrowIfNull(() => container);
-
-            this.container = container;
+            this.context = context;
         }
 
-        [DebuggerStepThrough]
         public void Process<TCommand>(TCommand command)
         {
-            Argument.ThrowIfNull(() => command);
+            var handler = this.context.Resolve<ICommandHandler<TCommand>>();
 
-            Type handlerType = typeof(ICommandHandler<>).MakeGenericType(command.GetType());
-
-            dynamic handler = this.container.GetInstance(handlerType);
-
-            handler.Handle((dynamic)command);
+            handler.Handle(command);
         }
     }
 }
