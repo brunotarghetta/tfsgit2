@@ -13,7 +13,7 @@
     </RootPath>
     <RootNamespace>BCR.Db</RootNamespace>
     <AssemblyName>BCR.Db</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>3082,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -26,6 +26,12 @@
     <SccProvider>SAK</SccProvider>
     <SccAuxPath>SAK</SccAuxPath>
     <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>Modern_Spanish_100_CI_AI</DefaultCollation>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <Recovery>SIMPLE</Recovery>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ReadCommittedSnapshot>True</ReadCommittedSnapshot>
+    <Trustworthy>True</Trustworthy>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -65,8 +71,17 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Stored Procedures\pr_ObtenerIndicadorQuimico.sql" />
+    <Build Include="Tables\t_mon_ConfiguracionUnidadNegocio.sql" />
+    <Build Include="Tables\t_mon_Escala.sql" />
+    <Build Include="Tables\t_mon_TipoIndicador.sql" />
+    <Build Include="Tables\t_mon_Indicador.sql" />
+    <Build Include="Tables\t_mon_Semaforo.sql" />
+    <Build Include="Tables\t_mon_UnidadNegocio.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BCR.Db_DEVP_DEV_LABORATORIO.publish.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="BCR.Db.refactorlog" />
   </ItemGroup>
 </Project>

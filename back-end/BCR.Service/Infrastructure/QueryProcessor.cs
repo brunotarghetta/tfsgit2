@@ -18,7 +18,7 @@ namespace BCR.Service.Infrastructure
             this.context = context;
         }
 
-        public TResult Process<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult> where TResult : DataView
+        public TResult Process<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult> // where TResult : DataView
         {
             var handler = this.context.Resolve<IQueryHandler<TQuery, TResult>>();
 

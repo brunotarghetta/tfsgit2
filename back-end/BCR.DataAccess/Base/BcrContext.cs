@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BCR.DataAccess.Configuracion;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,7 +18,7 @@ namespace BCR.DataAccess.Base
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.ApplyConfiguration(new ServicioExternoEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new ConfiguracionEntityConfiguration());
             //modelBuilder.ApplyConfiguration(new LogServicioEntityConfiguration());
             //modelBuilder.ApplyConfiguration(new LogServicioExternoEntityConfiguration());
             //modelBuilder.Query<ProformaDataView>();

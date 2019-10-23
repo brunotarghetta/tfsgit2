@@ -46,7 +46,8 @@ namespace BCR.Web.Api
             services.AddTransient<IJwtSecurityTokenHandlerFactory, JwtSecurityTokenHandlerFactory>();
 
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-            services.AddScoped<IUrlHelper>(x => {
+            services.AddScoped<IUrlHelper>(x =>
+            {
                 var actionContext = x.GetRequiredService<IActionContextAccessor>().ActionContext;
                 var factory = x.GetRequiredService<IUrlHelperFactory>();
                 return factory.GetUrlHelper(actionContext);
@@ -103,6 +104,12 @@ namespace BCR.Web.Api
             this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
 
             app.UseRouting();
+
+            app.UseCors(x =>
+            {
+                x.AllowAnyOrigin();
+                x.AllowAnyHeader();
+            });
 
             app.UseAuthorization();
 
