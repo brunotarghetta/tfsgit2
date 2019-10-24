@@ -1,13 +1,12 @@
 ﻿using BCR.Business.Domain.Base;
-using System;
 
-namespace BCR.Business.Domain.Configuracion
+namespace BCR.Business.Domain
 {
     public class Escala : Entity
     {
-        public Int64? Desde { get; set; }
+        public int? Desde { get; set; }
 
-        public Int64? Hasta { get; set; }
+        public int? Hasta { get; set; }
 
         public Semaforo Semaforo { get; set; }
 

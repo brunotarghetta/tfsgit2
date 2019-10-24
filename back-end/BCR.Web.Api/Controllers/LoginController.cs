@@ -1,5 +1,5 @@
 ﻿using BCR.Business.Domain.Commands.Seguridad;
-using BCR.Business.Domain.Queries.Seguridad;
+using BCR.Business.Domain.Queries;
 using BCR.Crosscutting.Exceptions;
 using BCR.Service.Infrastructure;
 using BCR.Web.Api.Infrastructure.Security;

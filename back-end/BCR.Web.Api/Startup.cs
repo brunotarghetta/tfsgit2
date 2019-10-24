@@ -1,12 +1,8 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using BCR.Business.Domain.Commands.Seguridad;
-using BCR.Business.Domain.Queries.Seguridad;
-using BCR.Business.Queries;
+using BCR.Business.Domain.Queries;
 using BCR.DataAccess.Base;
-using BCR.DataAccess.Seguridad;
 using BCR.Service.Infrastructure;
-using BCR.Service.Seguridad;
 using BCR.Web.Api.Infrastructure.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -20,7 +16,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Linq;
 using System.Reflection;
 
 namespace BCR.Web.Api

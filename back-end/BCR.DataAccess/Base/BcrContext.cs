@@ -18,7 +18,7 @@ namespace BCR.DataAccess.Base
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new ConfiguracionEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new ConfiguracionUnidadNegocioEntityConfiguration());
             //modelBuilder.ApplyConfiguration(new LogServicioEntityConfiguration());
             //modelBuilder.ApplyConfiguration(new LogServicioExternoEntityConfiguration());
             //modelBuilder.Query<ProformaDataView>();

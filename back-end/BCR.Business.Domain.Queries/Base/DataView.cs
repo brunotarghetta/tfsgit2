@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BCR.Business.Queries
+namespace BCR.Business.Domain.Queries
 {
     public abstract class DataView<TId>
     {

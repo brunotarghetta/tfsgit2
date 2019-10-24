@@ -1,8 +1,7 @@
 ﻿using BCR.Business.Domain.Base;
-using BCR.Business.Domain.General;
 using System.Collections.Generic;
 
-namespace BCR.Business.Domain.Configuracion
+namespace BCR.Business.Domain
 {
     public class ConfiguracionUnidadNegocio : Aggregate
     {

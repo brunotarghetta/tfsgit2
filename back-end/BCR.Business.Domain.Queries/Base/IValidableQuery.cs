@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BCR.Business.Queries.Base
+namespace BCR.Business.Domain.Queries
 {
     public interface IValidableQuery
     {
