@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{69AF0C94-E
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BCR.Db", "BCR.Db\BCR.Db.sqlproj", "{B5408B53-B16D-4FCC-9D29-E67D251AF810}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain.Tests.Unit", "BCR.Business.Domain.Tests.Unit\BCR.Business.Domain.Tests.Unit.csproj", "{935997AE-46EC-4FCC-8542-AA3536EF6E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Tests", "BCR.Tests\BCR.Tests.csproj", "{7330BB8A-9267-4779-B25B-903B2C81FCB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{935997AE-46EC-4FCC-8542-AA3536EF6E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935997AE-46EC-4FCC-8542-AA3536EF6E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935997AE-46EC-4FCC-8542-AA3536EF6E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935997AE-46EC-4FCC-8542-AA3536EF6E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7330BB8A-9267-4779-B25B-903B2C81FCB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7330BB8A-9267-4779-B25B-903B2C81FCB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7330BB8A-9267-4779-B25B-903B2C81FCB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7330BB8A-9267-4779-B25B-903B2C81FCB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,12 +96,14 @@ Global
 		{0750EDAD-68AE-48E1-8002-127551BBD447} = {A4DAF77F-3D4B-4E59-98D0-48516C5D6159}
 		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5} = {CC03D428-603F-4C78-8424-C5A2D8FC1E01}
 		{B5408B53-B16D-4FCC-9D29-E67D251AF810} = {69AF0C94-E87F-4C1F-8CF1-2815A2340504}
+		{935997AE-46EC-4FCC-8542-AA3536EF6E9E} = {75B1077D-4706-4332-8469-550C94C171C6}
+		{7330BB8A-9267-4779-B25B-903B2C81FCB7} = {BC8BE40E-3106-4502-AB92-4B2D7F770B0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DC8FB5A-6B45-4F82-8DCE-F2285679558B}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
+		SccNumberOfProjects = 11
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://arrosvmtfs08:8080/tfs/defaultcollection
 		SccLocalPath0 = .
@@ -125,5 +139,13 @@ Global
 		SccProjectTopLevelParentUniqueName8 = Bcr.sln
 		SccProjectName8 = BCR.Db
 		SccLocalPath8 = BCR.Db
+		SccProjectUniqueName9 = BCR.Business.Domain.Tests.Unit\\BCR.Business.Domain.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName9 = Bcr.sln
+		SccProjectName9 = BCR.Business.Domain.Tests.Unit
+		SccLocalPath9 = BCR.Business.Domain.Tests.Unit
+		SccProjectUniqueName10 = BCR.Tests\\BCR.Tests.csproj
+		SccProjectTopLevelParentUniqueName10 = Bcr.sln
+		SccProjectName10 = BCR.Tests
+		SccLocalPath10 = BCR.Tests
 	EndGlobalSection
 EndGlobal

@@ -1,11 +1,8 @@
-﻿using BCR.Business.Queries;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace BCR.Business.Domain.Queries.Seguridad
+namespace BCR.Business.Domain.Queries
 {
-    public class PermisosPorUsuarioQuery : IQuery<IEnumerable<String>>
+    public class PermisosPorUsuarioQuery : IQuery<IEnumerable<string>>
     {
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace BCR.Business.Queries
+﻿namespace BCR.Business.Domain.Queries
 {
     public interface IQueryHandler<TQuery, out TResult>
        where TQuery : IQuery<TResult>

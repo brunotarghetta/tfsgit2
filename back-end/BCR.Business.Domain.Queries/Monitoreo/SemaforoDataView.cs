@@ -1,6 +1,6 @@
 ﻿namespace BCR.Business.Domain.Queries
 {
-    public interface IQuery<TResult>
+    public class SemaforoDataView : DataView
     {
     }
 }

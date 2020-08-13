@@ -1,4 +1,4 @@
-﻿using BCR.Business.Domain.Queries.Seguridad;
+﻿using BCR.Business.Domain.Queries;
 using BCR.Crosscutting.Exceptions;
 using Microsoft.IdentityModel.Tokens;
 using System;

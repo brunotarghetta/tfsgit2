@@ -1,11 +1,7 @@
-﻿using BCR.Business.Domain.Queries.Seguridad;
-using BCR.Business.Queries;
+﻿using BCR.Business.Domain.Queries;
 using BCR.Crosscutting.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BCR.DataAccess.Seguridad
+namespace BCR.DataAccess
 {
     public class AutenticacionUsuarioContraseniaQueryHandler : IQueryHandler<AutenticacionUsuarioContraseniaQuery, AutenticacionUsuarioContraseniaDataView>
     {

@@ -1,6 +1,6 @@
 ﻿using BCR.Business.Domain.Base;
 
-namespace BCR.Business.Domain.General
+namespace BCR.Business.Domain
 {
     public class UnidadNegocio : Entity
     {
