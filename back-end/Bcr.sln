@@ -13,19 +13,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A4DA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Interface", "Service Interface", "{CC03D428-603F-4C78-8424-C5A2D8FC1E01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain", "BCR.Business.Domain\BCR.Business.Domain.csproj", "{25A90B4D-1B9B-4B95-802D-491F38D55A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.Business.Domain", "BCR.Business.Domain\BCR.Business.Domain.csproj", "{25A90B4D-1B9B-4B95-802D-491F38D55A8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain.Commands", "BCR.Business.Domain.Commands\BCR.Business.Domain.Commands.csproj", "{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.Business.Domain.Commands", "BCR.Business.Domain.Commands\BCR.Business.Domain.Commands.csproj", "{FAA71F85-9C17-4E8B-83C0-D714BCC5DB6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Business.Domain.Queries", "BCR.Business.Domain.Queries\BCR.Business.Domain.Queries.csproj", "{59FB266E-2C9F-4336-8186-56C1389BD007}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.Business.Domain.Queries", "BCR.Business.Domain.Queries\BCR.Business.Domain.Queries.csproj", "{59FB266E-2C9F-4336-8186-56C1389BD007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Crosscutting", "BCR.Crosscutting\BCR.Crosscutting.csproj", "{438AB154-160C-4E1F-A060-12F637E99A9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.Crosscutting", "BCR.Crosscutting\BCR.Crosscutting.csproj", "{438AB154-160C-4E1F-A060-12F637E99A9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.DataAccess", "BCR.DataAccess\BCR.DataAccess.csproj", "{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.DataAccess", "BCR.DataAccess\BCR.DataAccess.csproj", "{DDF45CA8-F3E6-453D-8B5C-E7B24094745B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Service", "BCR.Service\BCR.Service.csproj", "{0750EDAD-68AE-48E1-8002-127551BBD447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.Service", "BCR.Service\BCR.Service.csproj", "{0750EDAD-68AE-48E1-8002-127551BBD447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCR.Web.Api", "BCR.Web.Api\BCR.Web.Api.csproj", "{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCR.Web.Api", "BCR.Web.Api\BCR.Web.Api.csproj", "{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{69AF0C94-E87F-4C1F-8CF1-2815A2340504}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BCR.Db", "BCR.Db\BCR.Db.sqlproj", "{B5408B53-B16D-4FCC-9D29-E67D251AF810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,12 @@ Global
 		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,19 +83,20 @@ Global
 		{DDF45CA8-F3E6-453D-8B5C-E7B24094745B} = {17263F32-B83D-4824-BEFF-D3D6906CCD2C}
 		{0750EDAD-68AE-48E1-8002-127551BBD447} = {A4DAF77F-3D4B-4E59-98D0-48516C5D6159}
 		{0886CC7B-37B5-429F-B1E1-F81C9A2900E5} = {CC03D428-603F-4C78-8424-C5A2D8FC1E01}
+		{B5408B53-B16D-4FCC-9D29-E67D251AF810} = {69AF0C94-E87F-4C1F-8CF1-2815A2340504}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DC8FB5A-6B45-4F82-8DCE-F2285679558B}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
+		SccNumberOfProjects = 9
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://arrosvmtfs08:8080/tfs/defaultcollection
-		SccProjectUniqueName0 = BCR.Business.Domain\\BCR.Business.Domain.csproj
-		SccProjectTopLevelParentUniqueName0 = Bcr.sln
-		SccProjectName0 = BCR.Business.Domain
-		SccLocalPath0 = BCR.Business.Domain
-		SccLocalPath1 = .
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BCR.Business.Domain\\BCR.Business.Domain.csproj
+		SccProjectTopLevelParentUniqueName1 = Bcr.sln
+		SccProjectName1 = BCR.Business.Domain
+		SccLocalPath1 = BCR.Business.Domain
 		SccProjectUniqueName2 = BCR.Business.Domain.Commands\\BCR.Business.Domain.Commands.csproj
 		SccProjectTopLevelParentUniqueName2 = Bcr.sln
 		SccProjectName2 = BCR.Business.Domain.Commands
@@ -110,5 +121,9 @@ Global
 		SccProjectTopLevelParentUniqueName7 = Bcr.sln
 		SccProjectName7 = BCR.Web.Api
 		SccLocalPath7 = BCR.Web.Api
+		SccProjectUniqueName8 = BCR.Db\\BCR.Db.sqlproj
+		SccProjectTopLevelParentUniqueName8 = Bcr.sln
+		SccProjectName8 = BCR.Db
+		SccLocalPath8 = BCR.Db
 	EndGlobalSection
 EndGlobal

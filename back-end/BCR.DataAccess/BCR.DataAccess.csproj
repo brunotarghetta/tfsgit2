@@ -13,10 +13,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BCR.Business.Domain.Queries\BCR.Business.Domain.Queries.csproj" />
     <ProjectReference Include="..\BCR.Business.Domain\BCR.Business.Domain.csproj" />
+    <ProjectReference Include="..\BCR.Crosscutting\BCR.Crosscutting.csproj" />
   </ItemGroup>
 
 </Project>

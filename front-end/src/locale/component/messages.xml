@@ -1,0 +1,17 @@
+<messages>
+   <key id="DeseaContinuar">
+        <value>¿Desea continuar?</value>
+    </key>
+        <key id="DeseaConfirmarEstaAccion">
+        <value>¿Desea confirmar esta acción?</value>
+    </key>
+        <key id="VerificarLosDatosIngresados">
+        <value>Verificar los datos ingresados.</value>
+    </key>
+        <key id="ErrorValidacion">
+        <value>Error de validación.</value>
+    </key>
+    <key id="FaltaConfigurarLosPermisosDeAccesoALasOpcionesDeMenuEnLaPcIngresada">
+        <value>Falta configurar los permisos de acceso a las opciones de Menú en la PC ingresada.</value>
+    </key>
+</messages>

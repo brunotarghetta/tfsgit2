@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="3ce3154c-99a5-4795-9250-9a74dd86a744" ChangeDateTime="10/22/2019 15:18:24">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Configuracion].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Configuracion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_Configuracion" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c84330d-3353-4945-a216-0b42a46de541" ChangeDateTime="10/22/2019 15:19:24">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Parametro].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Parametro]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_Parametro" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b09d2129-5f32-48f4-98ea-b50c7600985c" ChangeDateTime="10/22/2019 15:22:26">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Escala].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Escala]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_Escala" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="be022f86-e36e-494a-a975-7acd501c9423" ChangeDateTime="10/22/2019 19:39:06">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Indicador].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Indicador]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_Indicador" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b7a86315-88bb-4f9b-9632-39f234038389" ChangeDateTime="10/22/2019 19:41:01">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Configuracion].[ID_Configuracion]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Configuracion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_ConfiguracionSector" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7707c5d3-a35b-4c43-9662-f45216354dad" ChangeDateTime="10/23/2019 16:01:51">
+    <Property Name="ElementName" Value="[dbo].[t_mon_ConfiguracionSector].[ID_ConfiguracionSector]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_ConfiguracionSector]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_ConfiguracionUnidadNegocio" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="450e7a49-0d05-47be-ad83-9edb616f8d75" ChangeDateTime="10/23/2019 16:07:35">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Semaforo].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Semaforo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_Semaforo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59ffc46c-c702-4b87-ab45-f5fb175aa6d2" ChangeDateTime="10/23/2019 16:08:42">
+    <Property Name="ElementName" Value="[dbo].[t_mon_UnidadNegocio].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_UnidadNegocio]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_UnidadNegocio" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b730fc53-d850-4622-86ef-dca0dd6d2fb7" ChangeDateTime="10/23/2019 16:08:52">
+    <Property Name="ElementName" Value="[dbo].[t_mon_UnidadNegocio].[NOmbre]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_UnidadNegocio]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Nombre" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ace7b9ca-fdf2-4288-b90a-85fc438ec807" ChangeDateTime="10/23/2019 16:09:38">
+    <Property Name="ElementName" Value="[dbo].[t_TipoIndicador].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_TipoIndicador]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_TipoIndicador" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="38801a7a-f79b-4f2f-b5b6-0c3f4357b3cf" ChangeDateTime="10/23/2019 16:11:31">
+    <Property Name="ElementName" Value="[dbo].[t_mon_ConfiguracionSector].[Activo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_ConfiguracionSector]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Activa" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="74ce5b8b-c754-4b0f-b1d3-3b6ffe32eed4" ChangeDateTime="10/23/2019 16:13:21">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Indicador].[ID_ConfiguracionSector]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Indicador]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_ConfiguracionUnidadNegocio" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="df2faf7b-3f90-44ed-8876-aaec46e320f7" ChangeDateTime="10/23/2019 16:16:25">
+    <Property Name="ElementName" Value="[dbo].[t_mon_Escala].[Color]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[t_mon_Escala]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID_Semaforo" />
+  </Operation>
+</Operations>
