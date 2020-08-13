@@ -8,6 +8,7 @@ using BCR.DataAccess.Seguridad;
 using BCR.Service.Infrastructure;
 using BCR.Service.Seguridad;
 using BCR.Web.Api.Infrastructure.Security;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +18,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Linq;
 using System.Reflection;
@@ -62,6 +64,25 @@ namespace BCR.Web.Api
                     },
                         ServiceLifetime.Scoped
                     );
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+           .AddJwtBearer(x =>
+           {
+               x.RequireHttpsMetadata = false;
+               x.SaveToken = true;
+               x.TokenValidationParameters = new TokenValidationParameters
+               {
+                   ValidateIssuerSigningKey = true,
+                   IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String("WWFyZEFwcFNlY3VyaXR5S2V5")),
+                   ValidateIssuer = false,
+                   ValidateAudience = false
+               };
+           });
+
             //AppDomain.CurrentDomain.ProcessExit += (s, e) => Log.CloseAndFlush();
             //LoggingConfig.RegisterLogger(Configuration);
 
@@ -111,6 +132,7 @@ namespace BCR.Web.Api
                 x.AllowAnyHeader();
             });
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
